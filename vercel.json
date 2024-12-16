@@ -2,12 +2,12 @@
     "redirects": [
       {
         "source": "/",
-        "destination": "/ae-en", // Default locale
+        "destination": "/ae-en",
         "permanent": false
       },
       {
         "source": "/:path((?!ae-en|ae-ar|sa-en|sa-ar).*)", 
-        "destination": "/ae-en/:path*", // Fallback locale
+        "destination": "/ae-en/:path*",
         "permanent": false
       },
       {
