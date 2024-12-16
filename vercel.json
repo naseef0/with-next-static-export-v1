@@ -1,0 +1,21 @@
+{
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/ae-en",
+        "permanent": true
+      },
+      {
+        "source": "/:path*",
+        "has": [
+          {
+            "type": "host",
+            "value": "(ae-en|ae-ar|sa-en|sa-ar)"
+          }
+        ],
+        "destination": "/:host/:path*",
+        "permanent": true
+      }
+    ]
+  }
+  
