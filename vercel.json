@@ -2,20 +2,18 @@
     "redirects": [
       {
         "source": "/",
-        "destination": "/ae-en",
-        "permanent": true
+        "destination": "/ae-en", // Default locale
+        "permanent": false
       },
       {
-        "source": "/:path*",
-        "has": [
-          {
-            "type": "host",
-            "value": "(ae-en|ae-ar|sa-en|sa-ar)"
-          }
-        ],
-        "destination": "/:host/:path*",
-        "permanent": true
+        "source": "/:path((?!ae-en|ae-ar|sa-en|sa-ar).*)", 
+        "destination": "/ae-en/:path*", // Fallback locale
+        "permanent": false
+      },
+      {
+        "source": "/:locale(ae-en|ae-ar|sa-en|sa-ar)/:path*",
+        "destination": "/:locale/:path*",
+        "permanent": false
       }
     ]
   }
-  
