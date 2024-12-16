@@ -2,17 +2,7 @@
     "redirects": [
       {
         "source": "/",
-        "destination": "/ae-en",
-        "permanent": false
-      },
-      {
-        "source": "/:locale(ae-en|ae-ar|sa-en|sa-ar)/:path*",
-        "destination": "/:locale/:path*",
-        "permanent": false
-      },
-      {
-        "source": "/:path((?!ae-en|ae-ar|sa-en|sa-ar).*)", 
-        "destination": "/ae-en/:path*",
+        "destination": "/ae-en", 
         "permanent": false
       }
     ]
