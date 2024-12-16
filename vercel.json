@@ -6,14 +6,15 @@
         "permanent": false
       },
       {
-        "source": "/:path((?!ae-en|ae-ar|sa-en|sa-ar).*)", 
-        "destination": "/ae-en/:path*",
+        "source": "/:locale(ae-en|ae-ar|sa-en|sa-ar)/:path*",
+        "destination": "/:locale/:path*",
         "permanent": false
       },
       {
-        "source": "/:locale(ae-en|ae-ar|sa-en|sa-ar)/:path*",
-        "destination": "/:locale/:path*",
+        "source": "/:path((?!ae-en|ae-ar|sa-en|sa-ar).*)", 
+        "destination": "/ae-en/:path*",
         "permanent": false
       }
     ]
   }
+  
