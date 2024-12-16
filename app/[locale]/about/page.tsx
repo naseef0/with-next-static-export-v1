@@ -10,3 +10,11 @@ export default function About() {
     </>
   );
 }
+
+export async function generateStaticParams() {
+  const locales = ["ae-en","ae-ar","sa-en","sa-ar"];
+  
+  return locales.map((locale) => ({
+    locale: locale,
+  }));
+}
