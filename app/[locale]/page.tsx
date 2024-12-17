@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LocaleSwitcher } from "../_components/LocaleSwitcher";
 
 
 type Params = {
@@ -18,6 +19,7 @@ const Home = async(props: Params) => {
       <p>
         Visit the <Link href={"/"+params?.locale+"/about"}>About</Link> page.
       </p>
+        <LocaleSwitcher></LocaleSwitcher>
     </div>
   );
 };
