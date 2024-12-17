@@ -2,31 +2,9 @@
     "redirects": [
       {
         "source": "/",
-        "destination": "/ae-en",
-        "permanent": false
-      },
-      {
-        "source": "/:path*",
-        "has": [
-          {
-            "type": "cookie",
-            "key": "NEXT_LOCALE",
-            "value": "(ae-en|ae-ar|sa-en|sa-ar)"
-          }
-        ],
-        "destination": "/:path*",
-        "permanent": false
-      },
-      {
-        "source": "/:path*",
-        "missing": [
-          {
-            "type": "cookie",
-            "key": "NEXT_LOCALE"
-          }
-        ],
-        "destination": "/ae-en/:path*",
+        "destination": "/ae-en", 
         "permanent": false
       }
     ]
   }
+  
